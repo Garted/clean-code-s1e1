@@ -27,7 +27,7 @@
             id="todo__input_add-new-task"
             class="todo__input todo__elem_size" 
             type="text">
-          <button class="todo__button">Add</button>
+          <button class="todo__button" id="todo__button_add-new-task">Add</button>
         </div>
       </section>
       <section class="todo__all">
@@ -36,16 +36,16 @@
           <li class="todo__item">
             <input class="todo__checkbox" type="checkbox">
             <label class="todo__label todo__elem_size">Pay Bills</label>
-            <input  type="text" class="todo__input todo__elem_size">
+            <input  type="text" class="todo__input todo__elem_size hidden">
             <button class="todo__button todo__button_edit">Edit</button>
-            <button class="todo__button todo__button_delete"><img class="todo__img" src="./remove.svg" alt="remove"></button>
+            <button class="todo__button todo__button_delete"><img class="todo__img todo__img_remove" src="./remove.svg" alt="remove"></button>
           </li>
           <li class="todo__item todo__item_edit">
             <input class="todo__checkbox" type="checkbox">
-            <label class="todo__label todo__label_edit todo__elem_size">Go Shopping</label>
-            <input type="text" value="Go Shopping" class="todo__input todo__input_edit todo__elem_size">
+            <label class="todo__label hidden todo__elem_size">Go Shopping</label>
+            <input type="text" value="Go Shopping" class="todo__input todo__elem_size">
             <button class="todo__button todo__button_edit">Save</button>
-            <button class="todo__button todo__button_delete"><img class="todo__img" src="./remove.svg" alt="remove"></button>
+            <button class="todo__button todo__button_delete"><img class="todo__img todo__img_remove" src="./remove.svg" alt="remove"></button>
           </li>
         </ul>
       </section>
@@ -54,10 +54,10 @@
         <ul class="todo__list" id="todo__list_completed">
           <li class="todo__item">
             <input class="todo__checkbox" type="checkbox" checked>
-            <label class="todo__label todo__label_completed todo__elem_size">See the Doctor</label>
-            <input type="text" class="todo__input todo__elem_size">
+            <label class="todo__label todo__elem_size todo__label_completed">See the Doctor</label>
+            <input type="text" class="todo__input todo__elem_size hidden">
             <button class="todo__button todo__button_edit">Edit</button>
-            <button class="todo__button todo__button_delete"><img class="todo__img" src="./remove.svg" alt="remove"></button>
+            <button class="todo__button todo__button_delete"><img class="todo__img todo__img_remove" src="./remove.svg" alt="remove"></button>
           </li>
         </ul>
       </section>
