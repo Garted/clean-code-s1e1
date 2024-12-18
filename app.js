@@ -136,7 +136,6 @@ var taskCompleted=function(){
     label.innerText=editInput.value;
     editInput.classList.add('hidden');
     editBtn.innerText="Edit";
-    editBtn.innerText="Edit";
     listItem.classList.remove('todo__item_edit');
 
     completedTasksHolder.appendChild(listItem);
