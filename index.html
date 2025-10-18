@@ -11,60 +11,60 @@
       charset='utf-8'>
   </head>
   <body class="app">
-    <section class='aaa'>
-      <img class="img" src='./eisenhower-matrix.jpg' alt="matrix">
+    <section class='info'>
+      <img class="info__img" src='./eisenhower-matrix.jpg' alt="matrix">
       <a 
-        class='more_inf' 
+        class='info__link' 
         href='https://goal-life.com/page/method/matrix-eisenhower'>Want more details?</a>
-        <h1 class="title">Eisenhower matrix</h1>
+        <h1 class="info__title">Eisenhower matrix</h1>
     </section>
-    <main class='centered-main-page-element'>
-      <section id='topSectionForAddingElementToList'>
-        <label class="heading" for='new-task'>Add Item</label>
-        <div class='task-row-wrapper'>
+    <main class='todos'>
+      <section class="todos__add">
+        <h3 class="todos__title">Add Item</h3>
+        <div class='todos__row'>
           <input 
-            id='new-task'
-            class='input-text task' 
+            id='create-task'
+            class='todos__input todos__wrap' 
             type='text'>
-          <button class="button">Add</button>
+          <button class="todos__button">Add</button>
         </div>
       </section>
-      <section>
-        <h3 class="heading">Todo</h3>
-        <ul id='incompleteTasks'>
-          <li class="list-item">
-            <input type='checkbox' class="checkbox">
-            <label class='task'>Pay Bills</label>
-            <input type='text' class='input-text input-todo task'>
-            <button class='button edit'>Edit</button>
-            <button class='button delete'>
-            <img class="delete-img" src='./remove.svg' alt="remove">
+      <section class="todos__list">
+        <h3 class="todos__title">Todo</h3>
+        <ul id='current-tasks'>
+          <li class="todos__list-item">
+            <input type='checkbox' class="todos__checkbox"/>
+            <label class='todos__wrap'>Pay Bills</label>
+            <input type='text' class='todos__input todos__wrap todos__wrap--hidden'/>
+            <button class='todos__button todos__button--edit'>Edit</button>
+            <button class='todos__button todos__button--delete'>
+            <img class="todos__img" src='./remove.svg' alt="remove">
             </button>
           </li>
-          <li class='list-item editMode'>
-            <input type='checkbox' class="checkbox">
-            <label class='task'>Go Shopping</label>
+          <li class='todos__list-item todos__list-item--edit'>
+            <input type='checkbox' class="todos__checkbox">
+            <label class='todos__wrap todos__wrap--hidden'>Go Shopping</label>
             <input 
               type='text' 
               value='Go Shopping' 
-              class='input-text edit-input task'>
-            <button class='button edit'>Save</button>
-            <button class='button delete'>
-              <img class="delete-img" src='./remove.svg' alt="remove">
+              class='todos__input todos__wrap'>
+            <button class='todos__button todos__button--edit'>Save</button>
+            <button class='todos__button todos__button--delete'>
+              <img class="todos__img" src='./remove.svg' alt="remove">
             </button>
           </li>
         </ul>
       </section>
-      <section>
-        <h3 class="heading">Completed</h3>
+      <section class="todo__completed">
+        <h3 class="todos__title">Completed</h3>
         <ul id='completed-tasks'>
-          <li class="list-item">
-            <input type='checkbox' class="checkbox" checked>
-            <label class='complete-label task'>See the Doctor</label>
-            <input type='text' class='input-text input-todo task'>
-            <button class='button edit'>Edit</button>
-            <button class='button delete'>
-              <img class="delete-img" src='./remove.svg' alt="remove">
+          <li class="todos__list-item">
+            <input type='checkbox' class="todos__checkbox" checked>
+            <label class='todos__label-completed todos__wrap'>See the Doctor</label>
+            <input type='text' class='todos__input todos__wrap--hidden todos__wrap'>
+            <button class='todos__button todos__button--edit'>Edit</button>
+            <button class='todos__button todos__button--delete'>
+              <img class="todos__img" src='./remove.svg' alt="remove">
             </button>
           </li>
         </ul>

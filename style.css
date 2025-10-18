@@ -20,47 +20,51 @@ button {
   font-family: Lato, sans-serif;
 }
 
-.aaa {
+.info {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
-.title {
+.info__title {
   display: none;
 }
 
-.img {
+.info__img {
   width: 100%;
 }
 
-.aaa .more_inf {
+.info__link {
   font-family: fantasy, cursive;
 }
 
 @media (max-width:768px) {
-.aaa { 
+.info { 
   text-align: center;
 }
 }
 
-.centered-main-page-element {
+.todos {
   display: block;
   width: 500px;
   margin: 0 auto 0;
 }
 
-.task {
-  width: 56%;
-  display: inline-block;
+.todos__wrap {
+  padding-left: 10px;
+  box-sizing: border-box;
+  font-size: 18px;
   flex-grow: 1;
+  /* width: 226px; */
 }
 
-.task-row-wrapper {
+.todos__row {
   display: flex;
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
 }
 
-.button {
+.todos__button {
   background: none;
   border: 0px;
   color: #888;
@@ -70,11 +74,12 @@ button {
   cursor: pointer;
 }
 
-.button:hover {
+.todos__button:hover {
   color: #3a3A3a;
 }
+
 /* Heading */
-.heading {
+.todos__title {
   display: block;
   color: #333;
   font-weight: 700;
@@ -85,7 +90,7 @@ button {
   text-transform: uppercase;
 }
 
-.input-text {
+.todos__input {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -96,24 +101,15 @@ button {
   border-radius: 6px;
   font-family: Lato, sans-serif;
   color: #888;
-  width: 226px;
+  /* width: 226px; */
 }
 
-.input-text:focus {
+.todos__input:focus {
   color: #333;
 }
 
-/* New Task */
-/* #new-task {
-  display: block;
-  margin: 0 0 20px;
-}
-input#new-task {
-  width: 318px;
-} */
-
 /* Task list */
-.list-item {
+.todos__list-item {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
@@ -122,42 +118,25 @@ input#new-task {
   align-items: center;
 }
 
-.checkbox {
+.todos__checkbox {
   margin: 0 10px;
 }
 
-.task {
-  padding-left: 10px;
-  box-sizing: border-box;
-  font-size: 18px;
-  width: 226px;
-}
-
-.delete-img {
+.todos__img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
-.delete-img:hover {
+.todos__img:hover {
   transform: rotateZ(0);
 }
 
 /* Completed */
-.complete-label {
+.todos__label-completed {
   text-decoration: line-through;
   color: #888;
 }
 
-/* Edit Task */
-.input-todo {
-  display: none;
-}
-
-.edit-input {
-  display: inline-block;
-  width: 224px;
-}
-
-.edit-label {
+.todos__wrap--hidden {
   display: none;
 }
