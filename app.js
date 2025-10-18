@@ -86,8 +86,8 @@ var editTask=function(){
 
     var listItem=this.parentNode;
 
-    var editInput=listItem.querySelector('input[type=text]');
-    var label=listItem.querySelector("label");
+    var editInput=listItem.querySelector('.todos__input');
+    var label=listItem.querySelector(".todos__wrap");
     var editBtn=listItem.querySelector(".todos__button--edit");
     var containsClass=listItem.classList.contains("todos__list-item--edit");
     //If class of the parent is .editmode
@@ -96,9 +96,13 @@ var editTask=function(){
         //switch to .editmode
         //label becomes the inputs value.
         label.innerText=editInput.value;
+        label.classList.toggle('todos__wrap--hidden');
+        editInput.classList.toggle('todos__wrap--hidden');
         editBtn.innerText="Edit";
     }else{
         editInput.value=label.innerText;
+        label.classList.toggle('todos__wrap--hidden');
+        editInput.classList.toggle('todos__wrap--hidden');
         editBtn.innerText="Save";
     }
 
